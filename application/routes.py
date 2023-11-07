@@ -28,7 +28,7 @@ def get_characters():
     character_list = []
     for character in characters:
         character_list.append(format_character(character))
-        return {'characters': character_list}
+    return {'characters': character_list}
 
 @app.route('/characters/<id>', methods=['GET'])
 def get_character(id):
